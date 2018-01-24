@@ -1,0 +1,47 @@
+body { background-color:#ddd; }
+.blog-row {margin-top:50px; }
+.margin_bottom30 { margin-bottom:30px; }
+.margin_left10 {margin-left:10px; }
+.blog-content {padding:10px; }
+.bg-white {background-color:#fff;}
+
+.maxheight {
+	max-height: 500px;
+}
+ 
+.newsImage {
+ 	min-height: 250px;
+	max-height: 250px;
+}
+
+.bluetitle {
+	color:  #428BCA;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+  background-color: lightgray;
+}
+
+/* Alex navbar css */
+
+.{
+padding: 0;
+}
+
+
+.top-fluid{
+    height: 150px;
+    background-image: url(../img/navbg.jpg);
+}
+
+.top-fluid h1{
+
+font-size: 60px;
+text-align: center;
+padding: 30px;
+
+}
+
+
+

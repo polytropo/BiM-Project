@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="contactusstyle.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row bg-light py-5">
+			<div class='col-xs-12 col-md-6 col-lg-7'>
+				 
+			    <div class="container">
+					<div class="row">
+						<h1 class='h1'>Contact Us</h1>
+						<div class="col-lg-9 blue">
+							<h3>Get In Touch with us!</h3>
+							<p class="lead">Fill in the form and we will contact you back within 24h!</p>
+							<form id='contact-form'>
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" class="form-control" id='nameContact' placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										<input type="email" class="form-control" id='emailContact' placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+										<textarea class="form-control" placeholder="Message" id='textContact' rows="5"></textarea>
+									</div>
+								</div>
+								<input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+							</form>
+				        </div>
+			        </div>
+			    </div>
+			</div>
+			<div class='col-md-6 col-lg-5 align-self-center py-4'>
+				<p> In case you want to visit us, feel free to! Our address is Kettenbruckengasse 23, 1050 Vienna, Austria.
+				<div id='map'></div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="contactScript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/1dec14be15.js"></script>
+    
+	<script>
+		function initMap() {
+		var location = {lat: 48.196443, lng: 16.359416};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 15,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+			})
+		}
+	</script>
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4woU0jzL-fesblmS9M1_M-85PCfX_Fo&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.{
+padding: 0;
+}
+
+
+.top-fluid{
+    height: 150px;
+    background-image: url(navbg.jpg);
+}
+
+.top-fluid h1{
+
+font-size: 60px;
+text-align: center;
+padding: 30px;
+
+}
+

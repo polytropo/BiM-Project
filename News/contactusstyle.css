@@ -1,0 +1,15 @@
+#map {
+	height: 400px;
+	width: 400px;
+}
+
+.blue {
+	background-color: #38A9D1;
+	padding: 3%;
+}
+
+.success, .error {
+	color: white;
+	padding: 5px;
+	margin:  5px 0 15px 0;
+}
